@@ -1,0 +1,62 @@
+[
+  {
+    "name": "General/MP_General",
+    "lib_name": "MP_Delay",
+    "device_id": ""
+  },
+  {
+    "name": "Amplifier/MP_Amplifier",
+    "lib_name": "MP_PAM8302A",
+    "device_id": "1"
+  },
+  {
+    "name": "Sound/MP_Sound",
+    "lib_name": "MP_MAX4466",
+    "device_id": "2"
+  },
+  {
+    "name": "Barometer/MP_Baro",
+    "lib_name": "MP_BME280",
+    "device_id": "3"
+  },
+  {
+    "name": "Humidity/MP_Humidity",
+    "lib_name": "MP_Si7021",
+    "device_id": "4"
+  },
+  {
+    "name": "Display/MP_LCD",
+    "lib_name": "MP_LCD16X2",
+    "device_id": "5"
+  },
+  {
+    "name": "Led/MP_Led",
+    "lib_name": "MP_GeneralLed",
+    "device_id": "6"
+  },
+  {
+    "name": "Gyroscope/MP_Gyro",
+    "lib_name": "MP_L3GD20",
+    "device_id": "7"
+  },
+  {
+    "name": "Temperature/MP_Temp",
+    "lib_name": "MP_TMP007",
+    "device_id": "8"
+  },
+  {
+    "name": "Magnetometer/MP_Mag",
+    "lib_name": "MP_LSM303",
+    "device_id": "9"
+  },
+  {
+    "name": "Accelerometer/MP_Accel",
+    "lib_name": "MP_LSM9DS1",
+    "device_id": "10"
+  },
+  {
+    "name": "DCMotor/MP_DCMotor",
+    "lib_name": "MP_Adafruit_Motor_Shield_V2",
+    "device_id": "11"
+  }
+]
