@@ -30,8 +30,8 @@
             "regex": "^(\\d([.]\\d{1,})?|[1-9]\\d([.]\\d{1,})?|100)$"
           }
         ],
-        "compatible": {
-          "interface": "Led/MP_Led",
+        "compatibility": {
+          "interface": "MP_LED",
           "fn_name": "dim"
         }
       },
@@ -63,8 +63,8 @@
             "regex": "^(\\d{1,})$"
           }
         ],
-        "compatible": {
-          "interface": "Led/MP_Led",
+        "compatibility": {
+          "interface": "MP_LED",
           "fn_name": "blink"
         }
       },
@@ -96,8 +96,8 @@
             "regex": "^(\\d([.]\\d{1,})?|[1-9]\\d([.]\\d{1,})?|100)$"
           }
         ],
-        "compatible": {
-          "interface": "Led/MP_Led",
+        "compatibility": {
+          "interface": "MP_LED",
           "fn_name": "on"
         }
       },
@@ -118,8 +118,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Led/MP_Led",
+        "compatibility": {
+          "interface": "MP_LED",
           "fn_name": "off"
         }
       }
@@ -145,8 +145,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Led/MP_LCD",
+        "compatibility": {
+          "interface": "MP_LCD",
           "fn_name": "backlight_on"
         }
       },
@@ -167,8 +167,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Display/MP_LCD",
+        "compatibility": {
+          "interface": "MP_LCD",
           "fn_name": "backlight_off"
         }
       },
@@ -200,8 +200,8 @@
             "regex": "^[\\S ]{0,16}+\\n+[\\S ]{0,16}$"
           }
         ],
-        "compatible": {
-          "interface": "Display/MP_LCD",
+        "compatibility": {
+          "interface": "MP_LCD",
           "fn_name": "show"
         }
       },
@@ -222,8 +222,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Display/MP_LCD",
+        "compatibility": {
+          "interface": "MP_LCD",
           "fn_name": "clear"
         }
       }
@@ -271,8 +271,8 @@
             "regex": "^(\\d([.]\\d{1,})?|[1-9]\\d([.]\\d{1,})?|100)$"
           }
         ],
-        "compatible": {
-          "interface": "Amplifier/MP_Amplifier",
+        "compatibility": {
+          "interface": "MP_Amplifier",
           "fn_name": "play"
         }
       },
@@ -293,8 +293,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Amplifier/MP_Amplifier",
+        "compatibility": {
+          "interface": "MP_Amplifier",
           "fn_name": "volUp"
         }
       },
@@ -315,8 +315,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Amplifier/MP_Amplifier",
+        "compatibility": {
+          "interface": "MP_Amplifier",
           "fn_name": "volDown"
         }
       },
@@ -348,8 +348,8 @@
             "regex": "^(\\d([.]\\d{1,})?|[1-9]\\d([.]\\d{1,})?|100)$"
           }
         ],
-        "compatible": {
-          "interface": "Amplifier/MP_Amplifier",
+        "compatibility": {
+          "interface": "MP_Amplifier",
           "fn_name": "setVol"
         }
       },
@@ -370,8 +370,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Amplifier/MP_Amplifier",
+        "compatibility": {
+          "interface": "MP_Amplifier",
           "fn_name": "stop"
         }
       },
@@ -414,8 +414,8 @@
             "regex": "^(\\d{1,})$"
           }
         ],
-        "compatible": {
-          "interface": "Amplifier/MP_Amplifier",
+        "compatibility": {
+          "interface": "MP_Amplifier",
           "fn_name": "beep"
         }
       }
@@ -464,8 +464,8 @@
             "regex": "^(\\d([.]\\d{1,})?|[1-9]\\d([.]\\d{1,})?|100)$"
           }
         ],
-        "compatible": {
-          "interface": "DCMotor/MP_DCMotor",
+        "compatibility": {
+          "interface": "MP_DCMotor",
           "fn_name": "on"
         }
       },
@@ -486,8 +486,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "DCMotor/MP_DCMotor",
+        "compatibility": {
+          "interface": "MP_DCMotor",
           "fn_name": "reverse"
         }
       },
@@ -519,8 +519,8 @@
             "regex": "^(\\d([.]\\d{1,})?|[1-9]\\d([.]\\d{1,})?|100)$"
           }
         ],
-        "compatible": {
-          "interface": "DCMotor/MP_DCMotor",
+        "compatibility": {
+          "interface": "MP_DCMotor",
           "fn_name": "set_speed"
         }
       },
@@ -541,8 +541,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "DCMotor/MP_DCMotor",
+        "compatibility": {
+          "interface": "MP_DCMotor",
           "fn_name": "stop"
         }
       }

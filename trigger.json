@@ -31,8 +31,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Accelerometer/MP_Accel",
+        "compatibility": {
+          "interface": "MP_Accel",
           "fn_name": "accel_x"
         }
       },
@@ -65,8 +65,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Accelerometer/MP_Accel",
+        "compatibility": {
+          "interface": "MP_Accel",
           "fn_name": "accel_y"
         }
       },
@@ -99,8 +99,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Accelerometer/MP_Accel",
+        "compatibility": {
+          "interface": "MP_Accel",
           "fn_name": "accel_z"
         }
       },
@@ -133,8 +133,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Accelerometer/MP_Accel",
+        "compatibility": {
+          "interface": "MP_Accel",
           "fn_name": "slop_x"
         }
       },
@@ -167,8 +167,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Accelerometer/MP_Accel",
+        "compatibility": {
+          "interface": "MP_Accel",
           "fn_name": "slop_y"
         }
       },
@@ -201,8 +201,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Accelerometer/MP_Accel",
+        "compatibility": {
+          "interface": "MP_Accel",
           "fn_name": "slop_z"
         }
       },
@@ -224,8 +224,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Accelerometer/MP_Accel",
+        "compatibility": {
+          "interface": "MP_Accel",
           "fn_name": "tap"
         }
       },
@@ -247,8 +247,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Accelerometer/MP_Accel",
+        "compatibility": {
+          "interface": "MP_Accel",
           "fn_name": "doubletap"
         }
       },
@@ -270,8 +270,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Accelerometer/MP_Accel",
+        "compatibility": {
+          "interface": "MP_Accel",
           "fn_name": "freefall"
         }
       }
@@ -309,8 +309,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Barometer/MP_Baro",
+        "compatibility": {
+          "interface": "MP_Baro",
           "fn_name": "pressure"
         }
       },
@@ -343,8 +343,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Barometer/MP_Baro",
+        "compatibility": {
+          "interface": "MP_Baro",
           "fn_name": "attitude"
         }
       }
@@ -382,8 +382,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Temperature/MP_Temp",
+        "compatibility": {
+          "interface": "MP_Temp",
           "fn_name": "temp"
         }
       }
@@ -394,29 +394,6 @@
     "children": [
       {
         "id": "Button_1",
-        "name": "Press",
-        "short_description": "Press the button",
-        "display_text": "{name} is pressed",
-        "params": [
-          {
-            "name": "name",
-            "control": "textbox",
-            "default_value": [
-              ""
-            ],
-            "args": [
-              ""
-            ],
-            "regex": "^[\\S]+$"
-          }
-        ],
-        "compatible": {
-          "interface": "Button/MP_Button",
-          "fn_name": "press"
-        }
-      },
-      {
-        "id": "Button_2",
         "name": "Release",
         "short_description": "Release the button",
         "display_text": "{name} is released",
@@ -433,28 +410,17 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Button/MP_Button",
+        "compatibility": {
+          "interface": "MP_Button",
           "fn_name": "release"
         }
       },
       {
-        "id": "Button_3",
-        "name": "Press x times",
-        "short_description": "Press the button x times",
-        "display_text": "{name} is pressed {value} {unit}",
+        "id": "Button_2",
+        "name": "DoubleRelease",
+        "short_description": "Release the button 2 times",
+        "display_text": "{name} is released 2 times",
         "params": [
-          {
-            "name": "Times",
-            "control": "NumberExpression",
-            "default_value": [
-              "3"
-            ],
-            "args": [
-              "times"
-            ],
-            "regex": "^(\\d{1,})$"
-          },
           {
             "name": "name",
             "control": "textbox",
@@ -467,43 +433,9 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Button/MP_Button",
-          "fn_name": "pressTime"
-        }
-      },
-      {
-        "id": "Button_4",
-        "name": "Hold",
-        "short_description": "Hold the button",
-        "display_text": "{name} is hold {value} {unit}",
-        "params": [
-          {
-            "name": "Time",
-            "control": "NumberExpression",
-            "default_value": [
-              "3"
-            ],
-            "args": [
-              "seconds"
-            ],
-            "regex": "^(\\d{1,})$"
-          },
-          {
-            "name": "name",
-            "control": "textbox",
-            "default_value": [
-              ""
-            ],
-            "args": [
-              ""
-            ],
-            "regex": "^[\\S]+$"
-          }
-        ],
-        "compatible": {
-          "interface": "Button/MP_Button",
-          "fn_name": "hold"
+        "compatibility": {
+          "interface": "MP_Button",
+          "fn_name": "doubleRelease"
         }
       }
     ]
@@ -540,8 +472,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Gyroscope/MP_Gyro",
+        "compatibility": {
+          "interface": "MP_Gyro",
           "fn_name": "rotate_x"
         }
       },
@@ -574,8 +506,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Gyroscope/MP_Gyro",
+        "compatibility": {
+          "interface": "MP_Gyro",
           "fn_name": "rotate_y"
         }
       },
@@ -608,8 +540,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Gyroscope/MP_Gyro",
+        "compatibility": {
+          "interface": "MP_Gyro",
           "fn_name": "rotate_z"
         }
       }
@@ -647,8 +579,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Humidity/MP_Humidity",
+        "compatibility": {
+          "interface": "MP_Humidity",
           "fn_name": "humidity"
         }
       }
@@ -686,8 +618,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Sound/MP_Sound",
+        "compatibility": {
+          "interface": "MP_Sound",
           "fn_name": "vol"
         }
       }
@@ -714,8 +646,8 @@
             "regex": "^(\\d{1,})$"
           }
         ],
-        "compatible": {
-          "interface": "General/MP_Delay",
+        "compatibility": {
+          "interface": "MP_Delay",
           "fn_name": "delay"
         }
       }
@@ -760,8 +692,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Magnetometer/MP_Mag",
+        "compatibility": {
+          "interface": "MP_Mag",
           "fn_name": "compass"
         }
       },
@@ -794,8 +726,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Magnetometer/MP_Mag",
+        "compatibility": {
+          "interface": "MP_Mag",
           "fn_name": "mag_x"
         }
       },
@@ -828,8 +760,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Magnetometer/MP_Mag",
+        "compatibility": {
+          "interface": "MP_Mag",
           "fn_name": "mag_y"
         }
       },
@@ -862,8 +794,8 @@
             "regex": "^[\\S]+$"
           }
         ],
-        "compatible": {
-          "interface": "Magnetometer/MP_Mag",
+        "compatibility": {
+          "interface": "MP_Mag",
           "fn_name": "mag_z"
         }
       }
